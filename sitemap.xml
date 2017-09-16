@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  
+  <url>
+    <loc>http://yoursite.com/2017/09/16/article-title/</loc>
+    
+    <lastmod>2017-09-16T00:28:47.492Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/2017/09/16/how-to-use-markdown/</loc>
+    
+    <lastmod>2017-09-16T00:26:28.258Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/2017/09/16/hello-world/</loc>
+    
+    <lastmod>2017-09-15T23:25:56.557Z</lastmod>
+    
+  </url>
+  
+</urlset>

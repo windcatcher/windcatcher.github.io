@@ -104,7 +104,7 @@
 <meta property="og:site_name" content="windcatcher">
 <meta property="og:description" content="markdown 使用   总结了markdown 使用的常见语法和快捷键    常用语法换行与缩进 换行：在行尾部处先按入两个以上的空格   缩进：输入&amp;amp;emsp;  标题 行首插入1 到 6 个 # ，对应到标题1到6阶  列表 无序列表：-或 * 即可变为无序列表 有序列表：直接在文字前加1. 2. 3. 符号要和文字之间加上一个字符的空格。  引用 需要在文本前加入 &amp;gt;   粗体和">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2017-09-16T03:08:24.518Z">
+<meta property="og:updated_time" content="2017-09-16T03:12:30.493Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="markdown 使用">
 <meta name="twitter:description" content="markdown 使用   总结了markdown 使用的常见语法和快捷键    常用语法换行与缩进 换行：在行尾部处先按入两个以上的空格   缩进：输入&amp;amp;emsp;  标题 行首插入1 到 6 个 # ，对应到标题1到6阶  列表 无序列表：-或 * 即可变为无序列表 有序列表：直接在文字前加1. 2. 3. 符号要和文字之间加上一个字符的空格。  引用 需要在文本前加入 &amp;gt;   粗体和">
@@ -390,21 +390,20 @@
 <h5 id="分割线"><a href="#分割线" class="headerlink" title="分割线"></a>分割线</h5><ul>
 <li>分割线的语法只需要<strong>三个 * 号</strong></li>
 </ul>
-<h5 id="页内跳转"><a href="#页内跳转" class="headerlink" title="页内跳转"></a>页内跳转</h5><ul>
-<li>######自动生成目录:<ul>
-<li>参考 快捷键<a href="#content">生成目录</a></li>
-</ul>
-</li>
-<li><p>######手动生成目录:</p>
-<ul>
-<li>目录内容<br>  * [1.语法示例](#1)<br>  &emsp;* [1.1图片](#1.1)    </li>
-<li>正文<br>  &lt;h5 id=”1”&gt;1.语法示例&lt;/h2&gt;<br>  &emsp;&lt;h6 id=”2”&gt;1.图片示例&lt;/h2&gt;  </li>
-<li><em>例如</em>  <blockquote>
-<p>目录<br>   <a href="#1">1.语法示例</a><br>  &emsp;<a href="#1.1">1.1图片</a><br>正文<br>  </p><h5 id="1">1.语法示例 <h6 id="1.1">1.1图片<p></p>
-</h6></h5></blockquote>
-</li>
-</ul>
-</li>
+<h5 id="页内跳转"><a href="#页内跳转" class="headerlink" title="页内跳转"></a>页内跳转</h5><h6 id="自动生成目录"><a href="#自动生成目录" class="headerlink" title="自动生成目录:"></a>自动生成目录:</h6><pre><code>* 参考 快捷键[生成目录](#content)
+</code></pre><h6 id="手动生成目录"><a href="#手动生成目录" class="headerlink" title="手动生成目录:"></a>手动生成目录:</h6><pre><code>- 目录内容  
+    \* \[1.语法示例\](#1)  
+    &amp;emsp;\* \[1.1图片\](#1.1)    
+- 正文  
+    &amp;lt;h5 id=&quot;1&quot;&gt;1.语法示例&amp;lt;/h2&gt;  
+    &amp;emsp;&amp;lt;h6 id=&quot;2&quot;&gt;1.图片示例&amp;lt;/h2&gt;  
+- *例如*  
+&gt;目录       
+     [1.语法示例](#1)  
+    &amp;emsp;[1.1图片](#1.1)  
+正文     
+    &lt;h5 id=&quot;1&quot;&gt;1.语法示例&lt;/h2&gt; &lt;h6 id=&quot;1.1&quot;&gt;1.1图片&lt;/h2&gt;
+</code></pre><ul>
 <li><h6 id="html标签实现"><a href="#html标签实现" class="headerlink" title="html标签实现"></a>html标签实现</h6><ul>
 <li>定义一个锚(id)：&lt;span id=”jump”>跳转到的地方&lt;/span></li>
 <li>使用markdown语法：[点击跳转](#jump)</li>
@@ -592,9 +591,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#markdown-使用"><span class="nav-number">1.</span> <span class="nav-text">markdown 使用</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#常用语法"><span class="nav-number">1.0.1.</span> <span class="nav-text">常用语法</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#换行与缩进"><span class="nav-number">1.0.1.1.</span> <span class="nav-text">换行与缩进</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#标题"><span class="nav-number">1.0.1.2.</span> <span class="nav-text">标题</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#列表"><span class="nav-number">1.0.1.3.</span> <span class="nav-text">列表</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#引用"><span class="nav-number">1.0.1.4.</span> <span class="nav-text">引用</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#粗体和斜体和字体颜色"><span class="nav-number">1.0.1.5.</span> <span class="nav-text">粗体和斜体和字体颜色</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#图片与链接"><span class="nav-number">1.0.1.6.</span> <span class="nav-text">图片与链接</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#代码框"><span class="nav-number">1.0.1.7.</span> <span class="nav-text">代码框</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#分割线"><span class="nav-number">1.0.1.8.</span> <span class="nav-text">分割线</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#页内跳转"><span class="nav-number">1.0.1.9.</span> <span class="nav-text">页内跳转</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#1"><span class="nav-number">1.0.1.10.</span> <span class="nav-text">1.语法示例 1.1图片
-</span></a><ol class="nav-child"><li class="nav-item nav-level-6"><a class="nav-link" href="#1.1"><span class="nav-number">1.0.1.10.1.</span> <span class="nav-text">1.1图片
-</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#html标签实现"><span class="nav-number">1.0.1.10.2.</span> <span class="nav-text">html标签实现</span></a></li></ol></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#常用快捷键"><span class="nav-number">1.0.2.</span> <span class="nav-text">常用快捷键</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#参考"><span class="nav-number">1.0.3.</span> <span class="nav-text">参考</span></a></li></ol></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#markdown-使用"><span class="nav-number">1.</span> <span class="nav-text">markdown 使用</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#常用语法"><span class="nav-number">1.0.1.</span> <span class="nav-text">常用语法</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#换行与缩进"><span class="nav-number">1.0.1.1.</span> <span class="nav-text">换行与缩进</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#标题"><span class="nav-number">1.0.1.2.</span> <span class="nav-text">标题</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#列表"><span class="nav-number">1.0.1.3.</span> <span class="nav-text">列表</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#引用"><span class="nav-number">1.0.1.4.</span> <span class="nav-text">引用</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#粗体和斜体和字体颜色"><span class="nav-number">1.0.1.5.</span> <span class="nav-text">粗体和斜体和字体颜色</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#图片与链接"><span class="nav-number">1.0.1.6.</span> <span class="nav-text">图片与链接</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#代码框"><span class="nav-number">1.0.1.7.</span> <span class="nav-text">代码框</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#分割线"><span class="nav-number">1.0.1.8.</span> <span class="nav-text">分割线</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#页内跳转"><span class="nav-number">1.0.1.9.</span> <span class="nav-text">页内跳转</span></a><ol class="nav-child"><li class="nav-item nav-level-6"><a class="nav-link" href="#自动生成目录"><span class="nav-number">1.0.1.9.1.</span> <span class="nav-text">自动生成目录:</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#手动生成目录"><span class="nav-number">1.0.1.9.2.</span> <span class="nav-text">手动生成目录:</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#html标签实现"><span class="nav-number">1.0.1.9.3.</span> <span class="nav-text">html标签实现</span></a></li></ol></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#常用快捷键"><span class="nav-number">1.0.2.</span> <span class="nav-text">常用快捷键</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#参考"><span class="nav-number">1.0.3.</span> <span class="nav-text">参考</span></a></li></ol></li></ol></li></ol></div>
             
 
           </div>

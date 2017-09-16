@@ -3,7 +3,7 @@
   <entry>
     <title><![CDATA[hexo使用]]></title>
     <url>%2F2017%2F09%2F16%2Fhow-to-use-hexo%2F</url>
-    <content type="text"><![CDATA[hexo使用常见语法发布新文章1hexo new post "article title" 编辑md文件使用markdown编辑器，编辑title，categories（类别），tags（标签）123456789---title: hexo使用date: 2017-09-16 18:34:28comments: falsecategories:- 工具tags:- Hexo--- 清理编译1hexo clean 生成编译1hexo g 本地启动服务，查看md是样式否合理启动本地服务1hexo s 输入地址 http://localhost:4000/ 部署1hexo d 也可以执行1hexo d -g #在部署前先生成 远程gitgub查看 输入地址：https://windcatcher.github.io/ 参考 手把手教你用Hexo+Github 搭建属于自己的博客 Jekyll迁移到Hexo搭建个人博客 next主题配置 hexo 怎么删除文章？ hexo常用命令笔记 博客园markdown代码块支持的语言]]></content>
+    <content type="text"><![CDATA[这里介绍如何使用hexo编译/部署博客文章到GitHub上，做为个人的博客使用 hexo使用常见语法发布新文章1hexo new post "article title" 编辑md文件使用markdown编辑器，编辑title，categories（类别），tags（标签）123456789---title: hexo使用date: 2017-09-16 18:34:28comments: falsecategories:- 工具tags:- Hexo--- 添加文章摘要 清理编译1hexo clean 生成编译1hexo g 本地启动服务，查看md是样式否合理启动本地服务1hexo s 输入地址 http://localhost:4000/ 部署1hexo d 也可以执行1hexo d -g #在部署前先生成 远程gitgub查看 输入地址：https://windcatcher.github.io/ 参考 手把手教你用Hexo+Github 搭建属于自己的博客 Jekyll迁移到Hexo搭建个人博客 next主题配置 hexo 怎么删除文章？ hexo常用命令笔记 博客园markdown代码块支持的语言]]></content>
       <categories>
         <category>工具</category>
       </categories>

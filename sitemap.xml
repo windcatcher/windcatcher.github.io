@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://windcatcher.github.io/2017/09/16/how-to-use-hexo/</loc>
+    
+    <lastmod>2017-09-16T11:07:04.032Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://windcatcher.github.io/2017/09/16/how-to-use-markdown/</loc>
     
     <lastmod>2017-09-16T10:29:05.684Z</lastmod>

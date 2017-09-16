@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  <entry>
+    <title><![CDATA[hexo使用]]></title>
+    <url>%2F2017%2F09%2F16%2Fhow-to-use-hexo%2F</url>
+    <content type="text"><![CDATA[hexo使用常见语法发布新文章1hexo new post "article title" 编辑md文件 使用markdown编辑器，编辑title，categories（类别），tags（标签）123456789---title: hexo使用date: 2017-09-16 18:34:28comments: falsecategories:- 工具tags:- Hexo--- 生成编译1hexo g 本地启动服务，查看md是样式否合理 启动本地服务 1hexo s 输入地址 http://localhost:4000/ 部署1hexo d 远程gitgub查看输入地址：https://windcatcher.github.io/ 参考 手把手教你用Hexo+Github 搭建属于自己的博客 Jekyll迁移到Hexo搭建个人博客 next主题配置 hexo 怎么删除文章？ hexo常用命令笔记 博客园markdown代码块支持的语言]]></content>
+      <categories>
+        <category>工具</category>
+      </categories>
+      <tags>
+        <tag>Hexo</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[markdown 使用]]></title>
+    <url>%2F2017%2F09%2F16%2Fhow-to-use-markdown%2F</url>
+    <content type="text"><![CDATA[markdown 使用 总结了markdown 使用的常见语法和快捷键 常用语法换行与缩进 换行：在行尾部处先按入两个以上的空格 缩进：输入&amp;emsp; 标题 行首插入1 到 6 个 # ，对应到标题1到6阶 列表 无序列表：-或 * 即可变为无序列表 有序列表：直接在文字前加1. 2. 3. 符号要和文字之间加上一个字符的空格。 引用 需要在文本前加入 > 粗体和斜体和字体颜色 粗体：两个 * 包含一段文本 斜体：用一个 * 包含一段文本 字体颜色：&lt;font color=red>内容&lt;/font> 例如 内容 图片与链接 图片为：![](){ImgCap}{/ImgCap} 链接为：[]() 代码框 ```java``` 示例： ```java这是一段java代码``` 效果： 12345678910//结算public void deposit(double money) &#123; double newBalance=this.balance+money; try &#123; Thread.sleep(10); &#125; catch (InterruptedException e) &#123; // TODO: handle exception &#125; this.balance=newBalance; &#125; 分割线 分割线的语法只需要三个 * 号 页内跳转自动生成目录: 参考 快捷键生成目录 手动生成目录 目录内容 \* \[1.语法示例\](#1) &amp;emsp;\* \[1.1图片\](#1.1) 正文 &amp;lt;h5 id=&quot;1&quot;&gt;1.语法示例&amp;lt;/h2&gt; &amp;emsp;&amp;lt;h6 id=&quot;2&quot;&gt;1.图片示例&amp;lt;/h2&gt; 例如 目录 [1.语法示例](#1) &amp;emsp;[1.1图片](#1.1) 正文 &lt;h5 id=&quot;1&quot;&gt;1.语法示例&lt;/h2&gt; &lt;h6 id=&quot;1.1&quot;&gt;1.1图片&lt;/h2&gt; html标签实现 定义一个锚(id)：&lt;span id=”jump”>跳转到的地方&lt;/span> 使用markdown语法：[点击跳转](#jump) 例如： 跳转到的地方点击跳转 常用快捷键 MarkdownPreview插件:快速预览：alt+m，前提需要设置该快捷键，MarkdownPreview没有默认的快捷键生成网页：按CTRL + B生成网页HTML；生成目录：在文章最前面添加[TOC]自动 生成目录 ；调出命令：Ctrl+Shift+P或是点击Preference-&gt;Package Control调出命令面板，输入mdp OmniMarkupPreviwer插件：Ctrl+Alt+O: Preview Markup in BrowserCtrl+Alt+X: Export Markup as HTML.Ctrl+Alt+C: Copy Markup as HTML MarkdownEditing插件插入链接：输入 “mdi + tab”插入图片：输入 “mdl + tab” 参考 MarkDown技巧：两种方式实现页内跳转 Markdown 语法说明 (简体中文版) Markdown: Basics （快速入门） Markdown——入门指南 怎么结合印象笔记来使用Sublime Text？ 使用Sublime Text 3写Markdown Sublime插件：Markdown篇 MarkdownPad 2 安装和破解]]></content>
+      <categories>
+        <category>工具</category>
+      </categories>
+      <tags>
+        <tag>Hexo</tag>
+      </tags>
+  </entry>
+</search>

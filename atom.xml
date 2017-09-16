@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>Windcatcher-追风</title>
+  <title>windcatcher</title>
   
   
   <link href="/atom.xml" rel="self"/>
@@ -10,7 +10,7 @@
   <id>https://windcatcher.github.io/</id>
   
   <author>
-    <name>Windcatcher</name>
+    <name>windcatcher</name>
     
   </author>
   

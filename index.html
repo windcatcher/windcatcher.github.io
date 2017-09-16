@@ -426,20 +426,23 @@
 <h5 id="分割线"><a href="#分割线" class="headerlink" title="分割线"></a>分割线</h5><ul>
 <li>分割线的语法只需要<strong>三个 * 号</strong></li>
 </ul>
-<h5 id="页内跳转"><a href="#页内跳转" class="headerlink" title="页内跳转"></a>页内跳转</h5><h6 id="自动生成目录"><a href="#自动生成目录" class="headerlink" title="自动生成目录:"></a>自动生成目录:</h6><pre><code>* 参考 快捷键[生成目录](#content)
-</code></pre><h6 id="手动生成目录"><a href="#手动生成目录" class="headerlink" title="手动生成目录:"></a>手动生成目录:</h6><pre><code>- 目录内容  
-    \* \[1.语法示例\](#1)  
-    &amp;emsp;\* \[1.1图片\](#1.1)    
-- 正文  
-    &amp;lt;h5 id=&quot;1&quot;&gt;1.语法示例&amp;lt;/h2&gt;  
-    &amp;emsp;&amp;lt;h6 id=&quot;2&quot;&gt;1.图片示例&amp;lt;/h2&gt;  
-- *例如*  
-&gt;目录       
-     [1.语法示例](#1)  
-    &amp;emsp;[1.1图片](#1.1)  
-正文     
-    &lt;h5 id=&quot;1&quot;&gt;1.语法示例&lt;/h2&gt; &lt;h6 id=&quot;1.1&quot;&gt;1.1图片&lt;/h2&gt;
-</code></pre><ul>
+<h5 id="页内跳转"><a href="#页内跳转" class="headerlink" title="页内跳转"></a>页内跳转</h5><h6 id="自动生成目录"><a href="#自动生成目录" class="headerlink" title="自动生成目录:"></a>自动生成目录:</h6><ul>
+<li>参考 快捷键<a href="#content">生成目录</a><h6 id="手动生成目录"><a href="#手动生成目录" class="headerlink" title="手动生成目录:"></a>手动生成目录:</h6></li>
+<li>目录内容    <pre><code>\* \[1.语法示例\](#1)  
+&amp;emsp;\* \[1.1图片\](#1.1)    
+</code></pre></li>
+<li>正文  <pre><code>&amp;lt;h5 id=&quot;1&quot;&gt;1.语法示例&amp;lt;/h2&gt;  
+ &amp;emsp;&amp;lt;h6 id=&quot;2&quot;&gt;1.图片示例&amp;lt;/h2&gt;  
+</code></pre></li>
+<li><p><em>例如</em>  </p>
+<blockquote>
+<p>  目录         </p>
+<pre><code> [1.语法示例](#1)  
+&amp;emsp;[1.1图片](#1.1)  
+</code></pre><p>  正文     </p>
+<pre><code>&lt;h5 id=&quot;1&quot;&gt;1.语法示例&lt;/h2&gt; &lt;h6 id=&quot;1.1&quot;&gt;1.1图片&lt;/h2&gt;
+</code></pre></blockquote>
+</li>
 <li><h6 id="html标签实现"><a href="#html标签实现" class="headerlink" title="html标签实现"></a>html标签实现</h6><ul>
 <li>定义一个锚(id)：&lt;span id=”jump”>跳转到的地方&lt;/span></li>
 <li>使用markdown语法：[点击跳转](#jump)</li>

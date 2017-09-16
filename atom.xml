@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://windcatcher.github.io/"/>
-  <updated>2017-09-16T02:09:43.321Z</updated>
+  <updated>2017-09-16T03:08:27.229Z</updated>
   <id>https://windcatcher.github.io/</id>
   
   <author>
@@ -17,48 +17,11 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>#新建文章</title>
-    <link href="https://windcatcher.github.io/2017/09/16/%E6%96%B0%E5%BB%BA%E6%96%87%E7%AB%A0/"/>
-    <id>https://windcatcher.github.io/2017/09/16/新建文章/</id>
-    <published>2017-09-16T02:09:43.000Z</published>
-    <updated>2017-09-16T02:09:43.321Z</updated>
-    
-    <summary type="html">
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
-    <title></title>
-    <link href="https://windcatcher.github.io/2017/09/16/how-to-use-markdown/"/>
-    <id>https://windcatcher.github.io/2017/09/16/how-to-use-markdown/</id>
-    <published>2017-09-16T00:02:05.637Z</published>
-    <updated>2017-09-16T00:26:28.258Z</updated>
-    
-    <content type="html"><![CDATA[<p>[TOC]</p><h2 id="markdown-使用"><a href="#markdown-使用" class="headerlink" title="markdown 使用"></a>markdown 使用</h2><blockquote><p>  总结了markdown 使用的常见语法和快捷键  </p></blockquote><h4 id="常用语法"><a href="#常用语法" class="headerlink" title="常用语法"></a>常用语法</h4><h5 id="换行与缩进"><a href="#换行与缩进" class="headerlink" title="换行与缩进"></a>换行与缩进</h5><ul><li>换行：在行尾部处先按入<strong>两个</strong>以上的<strong>空格</strong>  </li><li>缩进：输入&amp;emsp;</li></ul><h5 id="标题"><a href="#标题" class="headerlink" title="标题"></a>标题</h5><ul><li>行首插入1 到 6 个 # ，对应到标题1到6阶</li></ul><h5 id="列表"><a href="#列表" class="headerlink" title="列表"></a>列表</h5><ul><li>无序列表：-或 * 即可变为无序列表</li><li>有序列表：直接在文字前加1. 2. 3. 符号要和文字之间加上一个字符的空格。</li></ul><h5 id="引用"><a href="#引用" class="headerlink" title="引用"></a>引用</h5><ul><li>需要在文本前加入<strong> > </strong></li></ul><h5 id="粗体和斜体和字体颜色"><a href="#粗体和斜体和字体颜色" class="headerlink" title="粗体和斜体和字体颜色"></a>粗体和斜体和字体颜色</h5><ul><li>粗体：<strong>两个 * </strong>包含一段文本</li><li>斜体：用<strong>一个 * </strong>包含一段文本</li><li>字体颜色：&lt;font color=red>内容&lt;/font><ul><li><em>例如</em>   <blockquote><font color="red">内容</font></blockquote></li></ul></li></ul><h5 id="图片与链接"><a href="#图片与链接" class="headerlink" title="图片与链接"></a>图片与链接</h5><ul><li>图片为：![](){ImgCap}{/ImgCap}</li><li>链接为：[]()</li></ul><h5 id="代码框"><a href="#代码框" class="headerlink" title="代码框"></a>代码框</h5><ul><li>```java```</li><li>示例：    <blockquote><p>```java<br>这是一段java代码<br>```</p></blockquote></li><li><em>效果：</em>  <figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line"><span class="comment">//结算</span></div><div class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">deposit</span><span class="params">(<span class="keyword">double</span> money)</span> </span>&#123;  </div><div class="line">        <span class="keyword">double</span> newBalance=<span class="keyword">this</span>.balance+money;  </div><div class="line">        <span class="keyword">try</span> &#123;  </div><div class="line">            Thread.sleep(<span class="number">10</span>);  </div><div class="line">        &#125; <span class="keyword">catch</span> (InterruptedException e) &#123;  </div><div class="line">            <span class="comment">// <span class="doctag">TODO:</span> handle exception  </span></div><div class="line">        &#125;  </div><div class="line">        <span class="keyword">this</span>.balance=newBalance;  </div><div class="line">    &#125;</div></pre></td></tr></table></figure></li></ul><h5 id="分割线"><a href="#分割线" class="headerlink" title="分割线"></a>分割线</h5><ul><li>分割线的语法只需要<strong>三个 * 号</strong></li></ul><h5 id="页内跳转"><a href="#页内跳转" class="headerlink" title="页内跳转"></a>页内跳转</h5><ul><li>######自动生成目录:<ul><li>参考 快捷键<a href="#content">生成目录</a></li></ul></li><li><p>######手动生成目录:</p><ul><li>目录内容<br>  * [1.语法示例](#1)<br>  &emsp;* [1.1图片](#1.1)    </li><li>正文<br>  &lt;h5 id=”1”&gt;1.语法示例&lt;/h2&gt;<br>  &emsp;&lt;h6 id=”2”&gt;1.图片示例&lt;/h2&gt;  </li><li><em>例如</em>  <blockquote><p>目录<br>   <a href="#1">1.语法示例</a><br>  &emsp;<a href="#1.1">1.1图片</a><br>正文<br>  </p><h5 id="1">1.语法示例 <h6 id="1.1">1.1图片<p></p></h6></h5></blockquote></li></ul></li><li><h6 id="html标签实现"><a href="#html标签实现" class="headerlink" title="html标签实现"></a>html标签实现</h6><ul><li>定义一个锚(id)：&lt;span id=”jump”>跳转到的地方&lt;/span></li><li>使用markdown语法：[点击跳转](#jump)</li><li><em>例如：</em><blockquote><p><span id="jump">跳转到的地方</span><br><a href="#jump">点击跳转</a></p></blockquote></li></ul></li></ul><hr><h4 id="常用快捷键"><a href="#常用快捷键" class="headerlink" title="常用快捷键"></a>常用快捷键</h4><ul><li>MarkdownPreview插件:<br><strong>快速预览</strong>：<strong>alt+m</strong>，<em>前提需要设置该快捷键，MarkdownPreview没有默认的快捷键</em><br><strong>生成网页</strong>：按<strong>CTRL + B</strong>生成网页HTML；<br><strong>生成目录</strong>：在文章最前面添加<strong>[TOC]</strong>自动 <span id="content">生成目录</span>  ；<br><strong>调出命令</strong>：<strong>Ctrl+Shift+P</strong>或是点击Preference-&gt;Package Control调出命令面板，输入<strong>mdp</strong></li><li><p>OmniMarkupPreviwer插件：<br><strong>Ctrl+Alt+O</strong>: Preview Markup in Browser<br>Ctrl+Alt+X: Export Markup as HTML.<br>Ctrl+Alt+C: Copy Markup as HTML  </p></li><li><p>MarkdownEditing插件<br>插入链接：输入 “mdi + tab”<br>插入图片：输入 “mdl + tab”   </p></li></ul><hr><h4 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h4><ul><li><a href="http://www.cnblogs.com/JohnTsai/p/4027229.html#jump" target="_blank" rel="external">MarkDown技巧：两种方式实现页内跳转</a></li><li><a href="http://www.appinn.com/markdown/" target="_blank" rel="external">Markdown 语法说明 (简体中文版)</a></li><li><a href="http://www.appinn.com/markdown/basic.html" target="_blank" rel="external">Markdown: Basics （快速入门）</a></li><li><a href="http://www.jianshu.com/p/1e402922ee32/" target="_blank" rel="external">Markdown——入门指南</a></li><li><a href="http://www.jianshu.com/p/f8ff7dace5d4" target="_blank" rel="external">怎么结合印象笔记来使用Sublime Text？</a></li><li><a href="http://blog.csdn.net/qazxswed807/article/details/51235792#t3" target="_blank" rel="external">使用Sublime Text 3写Markdown</a></li><li><a href="http://www.jianshu.com/p/aa30cc25c91b" target="_blank" rel="external">Sublime插件：Markdown篇</a></li><li><a href="http://blog.csdn.net/github_35160620/article/details/52158604" target="_blank" rel="external">MarkdownPad 2 安装和破解</a></li></ul>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;[TOC]&lt;/p&gt;
-&lt;h2 id=&quot;markdown-使用&quot;&gt;&lt;a href=&quot;#markdown-使用&quot; class=&quot;headerlink&quot; title=&quot;markdown 使用&quot;&gt;&lt;/a&gt;markdown 使用&lt;/h2&gt;&lt;blockquote&gt;
-&lt;p&gt;  总结了mar
-      
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
-    <title></title>
+    <title>测试用</title>
     <link href="https://windcatcher.github.io/2017/09/16/article-title/"/>
     <id>https://windcatcher.github.io/2017/09/16/article-title/</id>
-    <published>2017-09-15T23:52:00.077Z</published>
-    <updated>2017-09-16T00:28:47.492Z</updated>
+    <published>2017-09-16T02:34:28.000Z</published>
+    <updated>2017-09-16T03:08:27.229Z</updated>
     
     <content type="html"><![CDATA[<h1 id="测试用"><a href="#测试用" class="headerlink" title="测试用"></a>测试用</h1><h2 id="测试用-1"><a href="#测试用-1" class="headerlink" title="测试用"></a>测试用</h2>]]></content>
     
@@ -68,6 +31,42 @@
       
         &lt;h1 id=&quot;测试用&quot;&gt;&lt;a href=&quot;#测试用&quot; class=&quot;headerlink&quot; title=&quot;测试用&quot;&gt;&lt;/a&gt;测试用&lt;/h1&gt;&lt;h2 id=&quot;测试用-1&quot;&gt;&lt;a href=&quot;#测试用-1&quot; class=&quot;headerlink&quot; title=&quot;测试用&quot;&gt;&lt;/a&gt;测试
       
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>markdown 使用</title>
+    <link href="https://windcatcher.github.io/2017/09/16/how-to-use-markdown/"/>
+    <id>https://windcatcher.github.io/2017/09/16/how-to-use-markdown/</id>
+    <published>2017-09-16T02:34:28.000Z</published>
+    <updated>2017-09-16T03:08:24.518Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="markdown-使用"><a href="#markdown-使用" class="headerlink" title="markdown 使用"></a>markdown 使用</h2><blockquote><p>  总结了markdown 使用的常见语法和快捷键  </p></blockquote><h4 id="常用语法"><a href="#常用语法" class="headerlink" title="常用语法"></a>常用语法</h4><h5 id="换行与缩进"><a href="#换行与缩进" class="headerlink" title="换行与缩进"></a>换行与缩进</h5><ul><li>换行：在行尾部处先按入<strong>两个</strong>以上的<strong>空格</strong>  </li><li>缩进：输入&amp;emsp;</li></ul><h5 id="标题"><a href="#标题" class="headerlink" title="标题"></a>标题</h5><ul><li>行首插入1 到 6 个 # ，对应到标题1到6阶</li></ul><h5 id="列表"><a href="#列表" class="headerlink" title="列表"></a>列表</h5><ul><li>无序列表：-或 * 即可变为无序列表</li><li>有序列表：直接在文字前加1. 2. 3. 符号要和文字之间加上一个字符的空格。</li></ul><h5 id="引用"><a href="#引用" class="headerlink" title="引用"></a>引用</h5><ul><li>需要在文本前加入<strong> > </strong></li></ul><h5 id="粗体和斜体和字体颜色"><a href="#粗体和斜体和字体颜色" class="headerlink" title="粗体和斜体和字体颜色"></a>粗体和斜体和字体颜色</h5><ul><li>粗体：<strong>两个 * </strong>包含一段文本</li><li>斜体：用<strong>一个 * </strong>包含一段文本</li><li>字体颜色：&lt;font color=red>内容&lt;/font><ul><li><em>例如</em>   <blockquote><font color="red">内容</font></blockquote></li></ul></li></ul><h5 id="图片与链接"><a href="#图片与链接" class="headerlink" title="图片与链接"></a>图片与链接</h5><ul><li>图片为：![](){ImgCap}{/ImgCap}</li><li>链接为：[]()</li></ul><h5 id="代码框"><a href="#代码框" class="headerlink" title="代码框"></a>代码框</h5><ul><li>```java```</li><li>示例：    <blockquote><p>```java<br>这是一段java代码<br>```</p></blockquote></li><li><em>效果：</em>  <figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line"><span class="comment">//结算</span></div><div class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">deposit</span><span class="params">(<span class="keyword">double</span> money)</span> </span>&#123;  </div><div class="line">        <span class="keyword">double</span> newBalance=<span class="keyword">this</span>.balance+money;  </div><div class="line">        <span class="keyword">try</span> &#123;  </div><div class="line">            Thread.sleep(<span class="number">10</span>);  </div><div class="line">        &#125; <span class="keyword">catch</span> (InterruptedException e) &#123;  </div><div class="line">            <span class="comment">// <span class="doctag">TODO:</span> handle exception  </span></div><div class="line">        &#125;  </div><div class="line">        <span class="keyword">this</span>.balance=newBalance;  </div><div class="line">    &#125;</div></pre></td></tr></table></figure></li></ul><h5 id="分割线"><a href="#分割线" class="headerlink" title="分割线"></a>分割线</h5><ul><li>分割线的语法只需要<strong>三个 * 号</strong></li></ul><h5 id="页内跳转"><a href="#页内跳转" class="headerlink" title="页内跳转"></a>页内跳转</h5><ul><li>######自动生成目录:<ul><li>参考 快捷键<a href="#content">生成目录</a></li></ul></li><li><p>######手动生成目录:</p><ul><li>目录内容<br>  * [1.语法示例](#1)<br>  &emsp;* [1.1图片](#1.1)    </li><li>正文<br>  &lt;h5 id=”1”&gt;1.语法示例&lt;/h2&gt;<br>  &emsp;&lt;h6 id=”2”&gt;1.图片示例&lt;/h2&gt;  </li><li><em>例如</em>  <blockquote><p>目录<br>   <a href="#1">1.语法示例</a><br>  &emsp;<a href="#1.1">1.1图片</a><br>正文<br>  </p><h5 id="1">1.语法示例 <h6 id="1.1">1.1图片<p></p></h6></h5></blockquote></li></ul></li><li><h6 id="html标签实现"><a href="#html标签实现" class="headerlink" title="html标签实现"></a>html标签实现</h6><ul><li>定义一个锚(id)：&lt;span id=”jump”>跳转到的地方&lt;/span></li><li>使用markdown语法：[点击跳转](#jump)</li><li><em>例如：</em><blockquote><p><span id="jump">跳转到的地方</span><br><a href="#jump">点击跳转</a></p></blockquote></li></ul></li></ul><hr><h4 id="常用快捷键"><a href="#常用快捷键" class="headerlink" title="常用快捷键"></a>常用快捷键</h4><ul><li>MarkdownPreview插件:<br><strong>快速预览</strong>：<strong>alt+m</strong>，<em>前提需要设置该快捷键，MarkdownPreview没有默认的快捷键</em><br><strong>生成网页</strong>：按<strong>CTRL + B</strong>生成网页HTML；<br><strong>生成目录</strong>：在文章最前面添加<strong>[TOC]</strong>自动 <span id="content">生成目录</span>  ；<br><strong>调出命令</strong>：<strong>Ctrl+Shift+P</strong>或是点击Preference-&gt;Package Control调出命令面板，输入<strong>mdp</strong></li><li><p>OmniMarkupPreviwer插件：<br><strong>Ctrl+Alt+O</strong>: Preview Markup in Browser<br>Ctrl+Alt+X: Export Markup as HTML.<br>Ctrl+Alt+C: Copy Markup as HTML  </p></li><li><p>MarkdownEditing插件<br>插入链接：输入 “mdi + tab”<br>插入图片：输入 “mdl + tab”   </p></li></ul><hr><h4 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h4><ul><li><a href="http://www.cnblogs.com/JohnTsai/p/4027229.html#jump" target="_blank" rel="external">MarkDown技巧：两种方式实现页内跳转</a></li><li><a href="http://www.appinn.com/markdown/" target="_blank" rel="external">Markdown 语法说明 (简体中文版)</a></li><li><a href="http://www.appinn.com/markdown/basic.html" target="_blank" rel="external">Markdown: Basics （快速入门）</a></li><li><a href="http://www.jianshu.com/p/1e402922ee32/" target="_blank" rel="external">Markdown——入门指南</a></li><li><a href="http://www.jianshu.com/p/f8ff7dace5d4" target="_blank" rel="external">怎么结合印象笔记来使用Sublime Text？</a></li><li><a href="http://blog.csdn.net/qazxswed807/article/details/51235792#t3" target="_blank" rel="external">使用Sublime Text 3写Markdown</a></li><li><a href="http://www.jianshu.com/p/aa30cc25c91b" target="_blank" rel="external">Sublime插件：Markdown篇</a></li><li><a href="http://blog.csdn.net/github_35160620/article/details/52158604" target="_blank" rel="external">MarkdownPad 2 安装和破解</a></li></ul>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h2 id=&quot;markdown-使用&quot;&gt;&lt;a href=&quot;#markdown-使用&quot; class=&quot;headerlink&quot; title=&quot;markdown 使用&quot;&gt;&lt;/a&gt;markdown 使用&lt;/h2&gt;&lt;blockquote&gt;
+&lt;p&gt;  总结了markdown 使用的常见语法
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>#新建文章</title>
+    <link href="https://windcatcher.github.io/2017/09/16/%E6%96%B0%E5%BB%BA%E6%96%87%E7%AB%A0/"/>
+    <id>https://windcatcher.github.io/2017/09/16/新建文章/</id>
+    <published>2017-09-16T02:09:43.000Z</published>
+    <updated>2017-09-16T02:09:43.321Z</updated>
+    
+    <summary type="html">
     
     </summary>
     

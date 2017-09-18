@@ -1,6 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[Centos 6.5 安装memcached]]></title>
+    <url>%2F2017%2F09%2F18%2Finstall-memcached%2F</url>
+    <content type="text"><![CDATA[介绍如何使用Centos6.5的linux操作系统下安装分布式缓存memcached Centos 6.5 安装memcached]]></content>
+      <categories>
+        <category>linux</category>
+        <category>nosql</category>
+      </categories>
+      <tags>
+        <tag>memcached</tag>
+        <tag>linux</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Centos6.5 安装mysql5]]></title>
+    <url>%2F2017%2F09%2F18%2Finstall-mysql5%2F</url>
+    <content type="text"><![CDATA[介绍如何使用Centos6.5的linux操作系统下安装mysql5 Centos6.5 安装mysql5）]]></content>
+      <categories>
+        <category>linux</category>
+        <category>database</category>
+      </categories>
+      <tags>
+        <tag>linux</tag>
+        <tag>mysql</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[mybatis使用（配置、数据读取，对象化，分页）]]></title>
     <url>%2F2017%2F09%2F18%2Fhow-to-use-mybatis%2F</url>
     <content type="text"><![CDATA[介绍如何使用mybatismybatis是一款轻量级的orm框架，支持sql语句，相比hibernate使用起来更加灵活方便 mybatis使用（配置、数据读取，对象化，分页）步骤1：mybatis工程的创建步骤2：mybati配置步骤3：mybatis的数据导入和数据读写操作步骤4：mybatis对sql进行对象化步骤5：在mybatis中使用query查询对象步骤6：使用pagination对mybatis分页，并在jsp中展示源码]]></content>

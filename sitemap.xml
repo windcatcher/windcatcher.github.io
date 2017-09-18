@@ -2,6 +2,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://windcatcher.github.io/2017/09/18/install-mysql5/</loc>
+    
+    <lastmod>2017-09-18T07:09:16.675Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://windcatcher.github.io/2017/09/18/install-memcached/</loc>
+    
+    <lastmod>2017-09-18T07:08:01.670Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://windcatcher.github.io/2017/09/18/how-to-use-mybatis/</loc>
     
     <lastmod>2017-09-18T06:54:20.010Z</lastmod>

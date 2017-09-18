@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://windcatcher.github.io/2017/09/18/how-to-use-mybatis/</loc>
+    
+    <lastmod>2017-09-18T06:54:20.010Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://windcatcher.github.io/2017/09/16/how-to-use-hexo/</loc>
     
     <lastmod>2017-09-17T10:13:05.020Z</lastmod>

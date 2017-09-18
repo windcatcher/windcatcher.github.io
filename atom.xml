@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://windcatcher.github.io/"/>
-  <updated>2017-09-18T08:16:42.395Z</updated>
+  <updated>2017-09-18T08:30:31.902Z</updated>
   <id>https://windcatcher.github.io/</id>
   
   <author>
@@ -21,13 +21,13 @@
     <link href="https://windcatcher.github.io/2017/09/18/connect-google/"/>
     <id>https://windcatcher.github.io/2017/09/18/connect-google/</id>
     <published>2017-09-18T07:29:27.000Z</published>
-    <updated>2017-09-18T08:16:42.395Z</updated>
+    <updated>2017-09-18T08:30:31.902Z</updated>
     
-    <content type="html"><![CDATA[<p>介绍如何使用host的访问google、Facebook等国外主流网站<br>由于google搜索匹配度比百度的高，基于不浪费生命的原则，在选择搜索引擎方面个人更倾向使用google<br><a id="more"></a></p><blockquote><p>host文件访问域名的原理  </p><ul><li>A.用户主机访问某一个域名,先从host文件中读取，如果host文件有该域名的ip地址，则直接返回该ip地址  </li><li>B.如果没有该ip地址，则从dns服务器中获取ip，并将ip保存到host文件中  </li></ul><p>windows环境下host文件路径<br><em>C:\windows\system32\drivers\etc</em>  </p></blockquote><h4 id="需要的工具和环境"><a href="#需要的工具和环境" class="headerlink" title="需要的工具和环境"></a>需要的工具和环境</h4><h6 id="最新host文件"><a href="#最新host文件" class="headerlink" title="最新host文件"></a>最新host文件</h6><p><a href="https://laod.cn/hosts/2017-google-hosts.html" target="_blank" rel="external">下载地址</a></p><blockquote><p>host 文件里包含了google等网站的ip地址</p></blockquote><h6 id="SwitchHosts-软件"><a href="#SwitchHosts-软件" class="headerlink" title="SwitchHosts! 软件"></a>SwitchHosts! 软件</h6><ul><li><a href="https://github.com/oldj/SwitchHosts/releases" target="_blank" rel="external">下载地址</a></li></ul><h4 id="步骤"><a href="#步骤" class="headerlink" title="步骤"></a>步骤</h4><ol><li>安装SwitchHosts! 软件</li><li>使用管理员身份运行SwitchHosts! 软件</li><li>将下载的host文件的全部内容拷贝SwitchHosts! 软件myhost选项页中，并启用<br><img src="http://owdourx5j.bkt.clouddn.com/switchhost.png" alt="效果"></li><li>测试使用google<br><a href="https://www.google.com/ncr" target="_blank" rel="external">https://www.google.com/ncr</a></li></ol>]]></content>
+    <content type="html"><![CDATA[<p>介绍如何使用host的访问google、Facebook等国外主流网站<br>由于上网需要，我们经常需要使用到google搜索，但避免不了被墙，所以网络上有各种梯子。比较使用，个人认为host使用起来还是比较方便和高效的<br>在选择搜索引擎方面，基于不浪费生命的原则，由于google搜索匹配度比百度的高，个人更倾向使用google<br><a id="more"></a></p><blockquote><p>host文件访问域名的原理<br>A.用户主机访问某一个域名,先从host文件中读取，如果host文件有该域名的ip地址，则直接返回该ip地址<br>B.如果没有该ip地址，则从dns服务器中获取ip，并将ip保存到host文件中   </p></blockquote><h4 id="需要的工具和环境"><a href="#需要的工具和环境" class="headerlink" title="需要的工具和环境"></a>需要的工具和环境</h4><h6 id="最新host文件"><a href="#最新host文件" class="headerlink" title="最新host文件"></a>最新host文件</h6><ul><li><a href="https://laod.cn/hosts/2017-google-hosts.html" target="_blank" rel="external">下载地址</a><blockquote><p>host 文件里包含了google等网站的ip地址<br>windows环境下host文件路径<br><em>C:\windows\system32\drivers\etc</em> </p></blockquote></li></ul><h6 id="SwitchHosts-软件"><a href="#SwitchHosts-软件" class="headerlink" title="SwitchHosts! 软件"></a>SwitchHosts! 软件</h6><ul><li><a href="https://github.com/oldj/SwitchHosts/releases" target="_blank" rel="external">下载地址</a></li></ul><h4 id="步骤"><a href="#步骤" class="headerlink" title="步骤"></a>步骤</h4><h6 id="1安装SwitchHosts-软件"><a href="#1安装SwitchHosts-软件" class="headerlink" title="1安装SwitchHosts! 软件"></a>1安装SwitchHosts! 软件</h6><h6 id="2使用管理员身份运行SwitchHosts-软件"><a href="#2使用管理员身份运行SwitchHosts-软件" class="headerlink" title="2使用管理员身份运行SwitchHosts! 软件"></a>2使用管理员身份运行SwitchHosts! 软件</h6><h6 id="3拷贝host内容并启用"><a href="#3拷贝host内容并启用" class="headerlink" title="3拷贝host内容并启用"></a>3拷贝host内容并启用</h6><p>将下载的host文件的全部内容拷贝SwitchHosts! 软件myhost选项页中，并启用<br><img src="http://owdourx5j.bkt.clouddn.com/switchhost.png" alt="效果"></p><h6 id="4测试使用google"><a href="#4测试使用google" class="headerlink" title="4测试使用google"></a>4测试使用google</h6><p><a href="https://www.google.com/ncr" target="_blank" rel="external">https://www.google.com/ncr</a></p>]]></content>
     
     <summary type="html">
     
-      &lt;p&gt;介绍如何使用host的访问google、Facebook等国外主流网站&lt;br&gt;由于google搜索匹配度比百度的高，基于不浪费生命的原则，在选择搜索引擎方面个人更倾向使用google&lt;br&gt;
+      &lt;p&gt;介绍如何使用host的访问google、Facebook等国外主流网站&lt;br&gt;由于上网需要，我们经常需要使用到google搜索，但避免不了被墙，所以网络上有各种梯子。比较使用，个人认为host使用起来还是比较方便和高效的&lt;br&gt;在选择搜索引擎方面，基于不浪费生命的原则，由于google搜索匹配度比百度的高，个人更倾向使用google&lt;br&gt;
     
     </summary>
     

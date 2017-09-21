@@ -58,9 +58,9 @@
       <category term="nosql" scheme="https://windcatcher.github.io/categories/linux/nosql/"/>
     
     
-      <category term="linux" scheme="https://windcatcher.github.io/tags/linux/"/>
-    
       <category term="memcached" scheme="https://windcatcher.github.io/tags/memcached/"/>
+    
+      <category term="linux" scheme="https://windcatcher.github.io/tags/linux/"/>
     
   </entry>
   
@@ -84,9 +84,9 @@
       <category term="database" scheme="https://windcatcher.github.io/categories/linux/database/"/>
     
     
-      <category term="mysql" scheme="https://windcatcher.github.io/tags/mysql/"/>
-    
       <category term="linux" scheme="https://windcatcher.github.io/tags/linux/"/>
+    
+      <category term="mysql" scheme="https://windcatcher.github.io/tags/mysql/"/>
     
   </entry>
   

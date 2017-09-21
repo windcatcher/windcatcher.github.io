@@ -20,8 +20,8 @@
         <category>nosql</category>
       </categories>
       <tags>
-        <tag>linux</tag>
         <tag>memcached</tag>
+        <tag>linux</tag>
       </tags>
   </entry>
   <entry>
@@ -33,8 +33,8 @@
         <category>database</category>
       </categories>
       <tags>
-        <tag>mysql</tag>
         <tag>linux</tag>
+        <tag>mysql</tag>
       </tags>
   </entry>
   <entry>

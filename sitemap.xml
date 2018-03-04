@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://windcatcher.github.io/2018/03/04/create-dotnetcore-app-by-docker-compose/</loc>
+    
+    <lastmod>2018-03-04T14:09:00.616Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://windcatcher.github.io/2017/09/18/connect-google/</loc>
     
     <lastmod>2017-09-18T08:30:31.902Z</lastmod>

@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://windcatcher.github.io/2018/03/05/docker-compose-for-mysql/</loc>
+    
+    <lastmod>2018-03-04T18:35:39.389Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://windcatcher.github.io/2018/03/04/create-dotnetcore-app-by-docker-compose/</loc>
     
     <lastmod>2018-03-04T15:23:01.625Z</lastmod>

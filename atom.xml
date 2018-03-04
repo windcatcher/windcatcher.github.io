@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://windcatcher.github.io/"/>
-  <updated>2018-03-04T15:23:01.625Z</updated>
+  <updated>2018-03-04T18:35:39.389Z</updated>
   <id>https://windcatcher.github.io/</id>
   
   <author>
@@ -15,6 +15,32 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>使用docker-compose 构建mysql 的基本配置</title>
+    <link href="https://windcatcher.github.io/2018/03/05/docker-compose-for-mysql/"/>
+    <id>https://windcatcher.github.io/2018/03/05/docker-compose-for-mysql/</id>
+    <published>2018-03-04T18:32:14.000Z</published>
+    <updated>2018-03-04T18:35:39.389Z</updated>
+    
+    <content type="html"><![CDATA[<p>介绍使用docker-compose 构建mysql 的基本配置<br><a id="more"></a></p><h2 id="介绍使用docker-compose-构建mysql-的基本配置"><a href="#介绍使用docker-compose-构建mysql-的基本配置" class="headerlink" title="介绍使用docker-compose 构建mysql 的基本配置"></a>介绍使用docker-compose 构建mysql 的基本配置</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div></pre></td><td class="code"><pre><div class="line">version: <span class="string">'3'</span></div><div class="line"></div><div class="line">services:</div><div class="line">    db:</div><div class="line">        <span class="comment">#构建mysql镜像</span></div><div class="line">        image: mysql</div><div class="line">        container_name: mysql-db <span class="comment"># 容器名</span></div><div class="line">        <span class="built_in">command</span>: mysqld --character-set-server=utf8mb4 --collation-server=utf8mb4_unicode_ci <span class="comment">#设置utf8字符集</span></div><div class="line">        restart: always</div><div class="line">        environment:</div><div class="line">          MYSQL_ROOT_PASSWORD: root <span class="comment">#root管理员用户密码</span></div><div class="line">          MYSQL_USER: <span class="built_in">test</span>   <span class="comment">#创建test用户</span></div><div class="line">          MYSQL_PASSWORD: <span class="built_in">test</span>  <span class="comment">#设置test用户的密码</span></div><div class="line">        ports:</div><div class="line">          - <span class="string">'6606:3306'</span>  <span class="comment">#host物理直接映射端口为6606</span></div><div class="line">        volumes:</div><div class="line">          - <span class="string">"/e/docker/mysql/data/db:/var/lib/mysql"</span>    <span class="comment">#mysql数据库挂载到host物理机目录/e/docker/mysql/data/db</span></div><div class="line">          - <span class="string">"/e/docker/mysql/data/conf:/etc/mysql/conf.d"</span> <span class="comment">#容器的配置目录挂载到host物理机目录/e/docker/mysql/data/conf</span></div></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;介绍使用docker-compose 构建mysql 的基本配置&lt;br&gt;
+    
+    </summary>
+    
+      <category term="docker" scheme="https://windcatcher.github.io/categories/docker/"/>
+    
+    
+      <category term="docker-compose" scheme="https://windcatcher.github.io/tags/docker-compose/"/>
+    
+      <category term="docker" scheme="https://windcatcher.github.io/tags/docker/"/>
+    
+      <category term="mysql" scheme="https://windcatcher.github.io/tags/mysql/"/>
+    
+  </entry>
   
   <entry>
     <title>使用docker-compose 构建dotnetcore的console应用</title>
@@ -84,9 +110,9 @@
       <category term="nosql" scheme="https://windcatcher.github.io/categories/linux/nosql/"/>
     
     
-      <category term="memcached" scheme="https://windcatcher.github.io/tags/memcached/"/>
-    
       <category term="linux" scheme="https://windcatcher.github.io/tags/linux/"/>
+    
+      <category term="memcached" scheme="https://windcatcher.github.io/tags/memcached/"/>
     
   </entry>
   
@@ -110,9 +136,9 @@
       <category term="database" scheme="https://windcatcher.github.io/categories/linux/database/"/>
     
     
-      <category term="linux" scheme="https://windcatcher.github.io/tags/linux/"/>
-    
       <category term="mysql" scheme="https://windcatcher.github.io/tags/mysql/"/>
+    
+      <category term="linux" scheme="https://windcatcher.github.io/tags/linux/"/>
     
   </entry>
   

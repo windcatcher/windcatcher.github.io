@@ -1,6 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[使用docker-compose 构建mysql 的基本配置]]></title>
+    <url>%2F2018%2F03%2F05%2Fdocker-compose-for-mysql%2F</url>
+    <content type="text"><![CDATA[介绍使用docker-compose 构建mysql 的基本配置 介绍使用docker-compose 构建mysql 的基本配置123456789101112131415161718version: '3'services: db: #构建mysql镜像 image: mysql container_name: mysql-db # 容器名 command: mysqld --character-set-server=utf8mb4 --collation-server=utf8mb4_unicode_ci #设置utf8字符集 restart: always environment: MYSQL_ROOT_PASSWORD: root #root管理员用户密码 MYSQL_USER: test #创建test用户 MYSQL_PASSWORD: test #设置test用户的密码 ports: - '6606:3306' #host物理直接映射端口为6606 volumes: - "/e/docker/mysql/data/db:/var/lib/mysql" #mysql数据库挂载到host物理机目录/e/docker/mysql/data/db - "/e/docker/mysql/data/conf:/etc/mysql/conf.d" #容器的配置目录挂载到host物理机目录/e/docker/mysql/data/conf]]></content>
+      <categories>
+        <category>docker</category>
+      </categories>
+      <tags>
+        <tag>docker-compose</tag>
+        <tag>docker</tag>
+        <tag>mysql</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[使用docker-compose 构建dotnetcore的console应用]]></title>
     <url>%2F2018%2F03%2F04%2Fcreate-dotnetcore-app-by-docker-compose%2F</url>
     <content type="text"><![CDATA[介绍使用docker-compose 构建dotnetcore的console应用Docker Compose 是 Docker 官方编排（Orchestration）项目之一，负责快速在集群中部署分布式应用。Dockerfile 是一个文本文件，其内包含了一条条的指令(Instruction)，每一条指令构建一层，因此每一条指令的内容，就是描述该层应当如何构建。dotnetcore是微软跨平台的.net环境 使用docker-compose 构建dotnetcore的console应用1、创建【dockerconsole】目录12mkdir dockerconsolecd dockerconsole 2、使用vscode打开【dockerconsole】目录1code . 3、【dockerconsole】目录下创建dotnetcore的console应用1dotnet new console 4、创建Dockerfile文件123456789101112131415161718192021#使用microsoft/dotnet:sdk镜像作为编译环境FROM microsoft/dotnet:sdk AS build-env#设置应用在docker中的工作路径WORKDIR /app#拷贝所有csproj文件到/app下COPY *.csproj ./#执行还原命令RUN dotnet restore#拷贝所有文件到/app下COPY . ./#执行发布命令，编译的发布文件生成到/app/out目录下RUN dotnet publish -c Release -o out#使用microsoft/dotnet:runtime镜像作为运行环境FROM microsoft/dotnet:runtime#设置应用在docker中的工作路径WORKDIR /app#从build-env生成/app/out目录下的所有文件拷贝到/app下COPY --from=build-env /app/out ./#设置应用的启动命令ENTRYPOINT [ "dotnet","dockerconsole.dll" ] 5、创建docker-compose.yml文件12345678910111213version: '3'services: consoleapp: #构建名为consoleapp_img的镜像 image: consoleapp_img build: #docker-compose.yml的当前根目录 context: . #根目录下的Dockerfile文件 dockerfile: Dockerfile #运行容器，名为consoleapp_c container_name: consoleapp_c 6、【dockerconsole】目录下使用docker-compose 命令构建镜像并运行容器1docker-compose up 参考 Use multi-stage build with a .NET Core application 使用 Dockerfile 定制镜像]]></content>
@@ -33,8 +46,8 @@
         <category>nosql</category>
       </categories>
       <tags>
-        <tag>memcached</tag>
         <tag>linux</tag>
+        <tag>memcached</tag>
       </tags>
   </entry>
   <entry>
@@ -46,8 +59,8 @@
         <category>database</category>
       </categories>
       <tags>
-        <tag>linux</tag>
         <tag>mysql</tag>
+        <tag>linux</tag>
       </tags>
   </entry>
   <entry>

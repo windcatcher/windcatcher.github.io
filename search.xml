@@ -3,14 +3,14 @@
   <entry>
     <title><![CDATA[使用docker-compose 构建mysql 的基本配置]]></title>
     <url>%2F2018%2F03%2F05%2Fdocker-compose-for-mysql%2F</url>
-    <content type="text"><![CDATA[介绍使用docker-compose 构建mysql 的基本配置 介绍使用docker-compose 构建mysql 的基本配置123456789101112131415161718version: '3'services: db: #构建mysql镜像 image: mysql container_name: mysql-db # 容器名 command: mysqld --character-set-server=utf8mb4 --collation-server=utf8mb4_unicode_ci #设置utf8字符集 restart: always environment: MYSQL_ROOT_PASSWORD: root #root管理员用户密码 MYSQL_USER: test #创建test用户 MYSQL_PASSWORD: test #设置test用户的密码 ports: - '6606:3306' #host物理直接映射端口为6606 volumes: - "/e/docker/mysql/data/db:/var/lib/mysql" #mysql数据库挂载到host物理机目录/e/docker/mysql/data/db - "/e/docker/mysql/data/conf:/etc/mysql/conf.d" #容器的配置目录挂载到host物理机目录/e/docker/mysql/data/conf]]></content>
+    <content type="text"><![CDATA[介绍使用docker-compose 构建mysql 的基本配置 1.创建 docker-compose.yml文件1234567891011121314151617181920version: '3'services: db: #构建mysql镜像 image: mysql container_name: mysql-db # 容器名 command: mysqld --character-set-server=utf8mb4 --collation-server=utf8mb4_unicode_ci #设置utf8字符集 restart: always environment: MYSQL_ROOT_PASSWORD: root #root管理员用户密码 MYSQL_USER: test #创建test用户 MYSQL_PASSWORD: test #设置test用户的密码 ports: - '6606:3306' #host物理直接映射端口为6606 volumes: #mysql数据库挂载到host物理机目录/e/docker/mysql/data/db - "/e/docker/mysql/data/db:/var/lib/mysql" #容器的配置目录挂载到host物理机目录/e/docker/mysql/data/conf - "/e/docker/mysql/data/conf:/etc/mysql/conf.d" 2.在 docker-compose.yml文件下的目录下，使用docker -compose命令 创建mysql数据库容器1docker-compose up]]></content>
       <categories>
         <category>docker</category>
       </categories>
       <tags>
         <tag>docker-compose</tag>
-        <tag>docker</tag>
         <tag>mysql</tag>
+        <tag>docker</tag>
       </tags>
   </entry>
   <entry>
@@ -22,8 +22,8 @@
       </categories>
       <tags>
         <tag>docker-compose</tag>
-        <tag>dotnetcore</tag>
         <tag>docker</tag>
+        <tag>dotnetcore</tag>
       </tags>
   </entry>
   <entry>

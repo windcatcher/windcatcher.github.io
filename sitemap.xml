@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://windcatcher.github.io/2018/04/14/dockerswarm-consul-ocelot-for-aspnetcore-discovery/</loc>
+    
+    <lastmod>2018-04-13T19:11:22.801Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://windcatcher.github.io/2018/03/05/docker-compose-for-mysql/</loc>
     
     <lastmod>2018-03-04T18:42:30.256Z</lastmod>

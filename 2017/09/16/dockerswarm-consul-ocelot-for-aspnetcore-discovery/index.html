@@ -79,7 +79,7 @@
 <link href="/css/main.css?v=5.1.2" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="Hexo," />
+  <meta name="keywords" content="docker,dockerswarm,consul,asp.net core,ocelot," />
 
 
 
@@ -97,18 +97,22 @@
 
 
 
-<meta name="description" content="介绍如何使用markdown编写个人文章markdown是一种非常流行的文本标记语言，语法简洁明了，易于排版，便于书写，第三方支持丰富。">
-<meta name="keywords" content="Hexo">
+<meta name="description" content="介绍使用dockerswarm+consul+ocelot对asp netcore服务进行集群,发现和网关认证swarm是docker官方下的服务编排组件，上手简单，能快速地进行服务的集群发布。在集群中使用consul进行服务发现与注册">
+<meta name="keywords" content="docker,dockerswarm,consul,asp.net core,ocelot">
 <meta property="og:type" content="article">
-<meta property="og:title" content="markdown 使用">
-<meta property="og:url" content="https://windcatcher.github.io/2017/09/16/how-to-use-markdown/index.html">
+<meta property="og:title" content="使用dockerswarm+consul+ocelot对asp netcore服务进行集群,发现和网关认证">
+<meta property="og:url" content="https://windcatcher.github.io/2017/09/16/dockerswarm-consul-ocelot-for-aspnetcore-discovery/index.html">
 <meta property="og:site_name" content="windcatcher">
-<meta property="og:description" content="介绍如何使用markdown编写个人文章markdown是一种非常流行的文本标记语言，语法简洁明了，易于排版，便于书写，第三方支持丰富。">
+<meta property="og:description" content="介绍使用dockerswarm+consul+ocelot对asp netcore服务进行集群,发现和网关认证swarm是docker官方下的服务编排组件，上手简单，能快速地进行服务的集群发布。在集群中使用consul进行服务发现与注册">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2017-09-17T10:13:02.737Z">
+<meta property="og:image" content="https://images2018.cnblogs.com/blog/685513/201804/685513-20180414020700481-632520088.png">
+<meta property="og:image" content="https://images2018.cnblogs.com/blog/685513/201804/685513-20180414021226149-433800929.png">
+<meta property="og:image" content="https://images2018.cnblogs.com/blog/685513/201804/685513-20180414021138492-854678383.png">
+<meta property="og:updated_time" content="2018-04-13T19:21:34.128Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="markdown 使用">
-<meta name="twitter:description" content="介绍如何使用markdown编写个人文章markdown是一种非常流行的文本标记语言，语法简洁明了，易于排版，便于书写，第三方支持丰富。">
+<meta name="twitter:title" content="使用dockerswarm+consul+ocelot对asp netcore服务进行集群,发现和网关认证">
+<meta name="twitter:description" content="介绍使用dockerswarm+consul+ocelot对asp netcore服务进行集群,发现和网关认证swarm是docker官方下的服务编排组件，上手简单，能快速地进行服务的集群发布。在集群中使用consul进行服务发现与注册">
+<meta name="twitter:image" content="https://images2018.cnblogs.com/blog/685513/201804/685513-20180414020700481-632520088.png">
 
 
 
@@ -138,13 +142,13 @@
 
 
 
-  <link rel="canonical" href="https://windcatcher.github.io/2017/09/16/how-to-use-markdown/"/>
+  <link rel="canonical" href="https://windcatcher.github.io/2017/09/16/dockerswarm-consul-ocelot-for-aspnetcore-discovery/"/>
 
 
 
 
 
-  <title>markdown 使用 | windcatcher</title>
+  <title>使用dockerswarm+consul+ocelot对asp netcore服务进行集群,发现和网关认证 | windcatcher</title>
   
 
 
@@ -325,7 +329,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://windcatcher.github.io/2017/09/16/how-to-use-markdown/">
+    <link itemprop="mainEntityOfPage" href="https://windcatcher.github.io/2017/09/16/dockerswarm-consul-ocelot-for-aspnetcore-discovery/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="windcatcher">
@@ -342,7 +346,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">markdown 使用</h1>
+          <h1 class="post-title" itemprop="name headline">使用dockerswarm+consul+ocelot对asp netcore服务进行集群,发现和网关认证</h1>
         
 
         <div class="post-meta">
@@ -354,7 +358,7 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-09-16T10:34:28+08:00">
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-09-16T18:34:28+08:00">
                 2017-09-16
               </time>
             
@@ -377,8 +381,19 @@
               
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/工具/" itemprop="url" rel="index">
-                    <span itemprop="name">工具</span>
+                  <a href="/categories/docker/" itemprop="url" rel="index">
+                    <span itemprop="name">docker</span>
+                  </a>
+                </span>
+
+                
+                
+                  ， 
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/docker/microservice/" itemprop="url" rel="index">
+                    <span itemprop="name">microservice</span>
                   </a>
                 </span>
 
@@ -389,10 +404,24 @@
           
 
           
+            
+            <!--noindex-->
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2017/09/16/dockerswarm-consul-ocelot-for-aspnetcore-discovery/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count hc-comment-count" data-xid="2017/09/16/dockerswarm-consul-ocelot-for-aspnetcore-discovery/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+              <!--/noindex-->
+            
+          
 
           
           
-             <span id="/2017/09/16/how-to-use-markdown/" class="leancloud_visitors" data-flag-title="markdown 使用">
+             <span id="/2017/09/16/dockerswarm-consul-ocelot-for-aspnetcore-discovery/" class="leancloud_visitors" data-flag-title="使用dockerswarm+consul+ocelot对asp netcore服务进行集群,发现和网关认证">
                <span class="post-meta-divider">|</span>
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
@@ -428,98 +457,43 @@
       
 
       
-        <p>介绍如何使用markdown编写个人文章<br>markdown是一种非常流行的文本标记语言，语法简洁明了，易于排版，便于书写，第三方支持丰富。<br><a id="more"></a></p>
-<h2 id="markdown-使用"><a href="#markdown-使用" class="headerlink" title="markdown 使用"></a>markdown 使用</h2><blockquote>
-<p>  总结了markdown 使用的常见语法和快捷键  </p>
+        <p>介绍使用dockerswarm+consul+ocelot对asp netcore服务进行集群,发现和网关认证<br>swarm是docker官方下的服务编排组件，上手简单，能快速地进行服务的集群发布。<br>在集群中使用consul进行服务发现与注册<br><a id="more"></a></p>
+<h2 id="使用dockerswarm-consul-ocelot对asp-netcore服务进行集群-发现和网关认证"><a href="#使用dockerswarm-consul-ocelot对asp-netcore服务进行集群-发现和网关认证" class="headerlink" title="使用dockerswarm+consul+ocelot对asp netcore服务进行集群,发现和网关认证"></a>使用dockerswarm+consul+ocelot对asp netcore服务进行集群,发现和网关认证</h2><h3 id="环境"><a href="#环境" class="headerlink" title="环境"></a>环境</h3><blockquote>
+<p>window10环境下hyper-v中使用docker-machine创建三个 Docker 主机，并使用docker swarm加入到集群中</p>
 </blockquote>
-<h4 id="常用语法"><a href="#常用语法" class="headerlink" title="常用语法"></a>常用语法</h4><h5 id="换行与缩进"><a href="#换行与缩进" class="headerlink" title="换行与缩进"></a>换行与缩进</h5><ul>
-<li>换行：在行尾部处先按入<strong>两个</strong>以上的<strong>空格</strong>  </li>
-<li>缩进：输入&amp;emsp;</li>
+<ul>
+<li>manager管理节点ip为10.0.0.126</li>
+<li>work1工作节点ip为10.0.0.112</li>
+<li>work2工作节点ip为10.0.0.113</li>
 </ul>
-<h5 id="标题"><a href="#标题" class="headerlink" title="标题"></a>标题</h5><ul>
-<li>行首插入1 到 6 个 # ，对应到标题1到6阶</li>
-</ul>
-<h5 id="列表"><a href="#列表" class="headerlink" title="列表"></a>列表</h5><ul>
-<li>无序列表：-或 * 即可变为无序列表</li>
-<li>有序列表：直接在文字前加1. 2. 3. 符号要和文字之间加上一个字符的空格。</li>
-</ul>
-<h5 id="引用"><a href="#引用" class="headerlink" title="引用"></a>引用</h5><ul>
-<li>需要在文本前加入<strong> > </strong></li>
-</ul>
-<h5 id="粗体和斜体和字体颜色"><a href="#粗体和斜体和字体颜色" class="headerlink" title="粗体和斜体和字体颜色"></a>粗体和斜体和字体颜色</h5><ul>
-<li>粗体：<strong>两个 * </strong>包含一段文本</li>
-<li>斜体：用<strong>一个 * </strong>包含一段文本</li>
-<li>字体颜色：&lt;font color=red>内容&lt;/font><ul>
-<li><em>例如</em>   <blockquote>
-<font color="red">内容</font>
-
+<p>user_service和product_service服务部署于三个节点中，consulserver、ocelotgateway、identity_service和simpleclient服务部署在manager管理节点中</p>
+<blockquote>
+<p>其中user_service用户服务,product_service产品服务，ocelotgateway路由网关，identity_service认证服务，consulserver服务注册与发现，simpleclient访问客户端</p>
 </blockquote>
-</li>
-</ul>
-</li>
-</ul>
-<h5 id="图片与链接"><a href="#图片与链接" class="headerlink" title="图片与链接"></a>图片与链接</h5><ul>
-<li>图片为：![](){ImgCap}{/ImgCap}</li>
-<li>链接为：[]()</li>
-</ul>
-<h5 id="代码框"><a href="#代码框" class="headerlink" title="代码框"></a>代码框</h5><ul>
-<li>```java```</li>
-<li>示例：    <blockquote>
-<p>```java<br>这是一段java代码<br>```</p>
+<h3 id="简述"><a href="#简述" class="headerlink" title="简述"></a>简述</h3><p>docker swarm是docker官方下的服务编排组件，上手简单，能快速地进行服务的集群发布。</p>
+<blockquote>
+<p>swarm集群中使用endpoint_mode的dnsrr模式对各主机节点进行负载均衡，默认采用轮询方式</p>
+<p>在集群中使用consul进行服务发现与注册，user_service和product_service服务会向consul服务进行注册，在product_service中会使用consul的服务发现api调用user_service服务</p>
+<p>ocelot服务作为网关对user_service和product_service服务进行路由，并集成identity_service服务的认证</p>
 </blockquote>
+<h3 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h3><p><a href="https://github.com/windcatcher/netcore_Test/tree/master/MicroService/03OcelotConsul_Docker" target="_blank" rel="external">github地址</a></p>
+<h3 id="步骤"><a href="#步骤" class="headerlink" title="步骤"></a>步骤</h3><h4 id="进入manager管理节点，创建并编辑dockerSwarm-yml"><a href="#进入manager管理节点，创建并编辑dockerSwarm-yml" class="headerlink" title="进入manager管理节点，创建并编辑dockerSwarm.yml"></a>进入manager管理节点，创建并编辑dockerSwarm.yml</h4><h6 id="进入manager管理节点"><a href="#进入manager管理节点" class="headerlink" title="进入manager管理节点"></a>进入manager管理节点</h6><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">docker-machine ssh manager</div></pre></td></tr></table></figure>
+<h6 id="创建并编辑dockerSwarm-yml"><a href="#创建并编辑dockerSwarm-yml" class="headerlink" title="创建并编辑dockerSwarm.yml"></a>创建并编辑dockerSwarm.yml</h6><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">cd /tmp &amp;&amp; &gt; dockerSwarm.yml &amp;&amp; vi ./dockerSwarm.yml</div></pre></td></tr></table></figure>
+<h4 id="使用docker-stack命令发布服务"><a href="#使用docker-stack命令发布服务" class="headerlink" title="使用docker stack命令发布服务"></a>使用docker stack命令发布服务</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">docker stack deploy -c ./dockerSwarm.yml simpleconsul</div></pre></td></tr></table></figure>
+<h4 id="查看consul的UI中的服务"><a href="#查看consul的UI中的服务" class="headerlink" title="查看consul的UI中的服务"></a>查看consul的UI中的服务</h4><p><a href="http://10.0.0.126:8500" target="_blank" rel="external">http://10.0.0.126:8500</a></p>
+<p><img src="https://images2018.cnblogs.com/blog/685513/201804/685513-20180414020700481-632520088.png" alt=""></p>
+<h4 id="使用客户端访问经过ocelot网关认证（密码模式）的product服务信息"><a href="#使用客户端访问经过ocelot网关认证（密码模式）的product服务信息" class="headerlink" title="使用客户端访问经过ocelot网关认证（密码模式）的product服务信息"></a>使用客户端访问经过ocelot网关认证（密码模式）的product服务信息</h4><p><a href="http://10.0.0.126:8821/product/ownerpassword" target="_blank" rel="external">http://10.0.0.126:8821/product/ownerpassword</a></p>
+<p><img src="https://images2018.cnblogs.com/blog/685513/201804/685513-20180414021226149-433800929.png" alt=""></p>
+<h4 id="使用客户端访问的经过ocelot认证（密码模式）的Product服务中user信息"><a href="#使用客户端访问的经过ocelot认证（密码模式）的Product服务中user信息" class="headerlink" title="使用客户端访问的经过ocelot认证（密码模式）的Product服务中user信息"></a>使用客户端访问的经过ocelot认证（密码模式）的Product服务中user信息</h4><p><a href="http://10.0.0.126:8821/product/userinfo" target="_blank" rel="external">http://10.0.0.126:8821/product/userinfo</a></p>
+<p><img src="https://images2018.cnblogs.com/blog/685513/201804/685513-20180414021138492-854678383.png" alt=""></p>
+<h3 id="dockerSwarm-yml-文件"><a href="#dockerSwarm-yml-文件" class="headerlink" title="dockerSwarm.yml 文件"></a>dockerSwarm.yml 文件</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div><div class="line">53</div><div class="line">54</div><div class="line">55</div><div class="line">56</div><div class="line">57</div><div class="line">58</div><div class="line">59</div><div class="line">60</div><div class="line">61</div><div class="line">62</div><div class="line">63</div><div class="line">64</div><div class="line">65</div><div class="line">66</div><div class="line">67</div><div class="line">68</div><div class="line">69</div><div class="line">70</div><div class="line">71</div><div class="line">72</div><div class="line">73</div><div class="line">74</div><div class="line">75</div><div class="line">76</div><div class="line">77</div><div class="line">78</div><div class="line">79</div><div class="line">80</div><div class="line">81</div><div class="line">82</div><div class="line">83</div><div class="line">84</div><div class="line">85</div><div class="line">86</div><div class="line">87</div><div class="line">88</div><div class="line">89</div><div class="line">90</div><div class="line">91</div><div class="line">92</div><div class="line">93</div><div class="line">94</div><div class="line">95</div><div class="line">96</div><div class="line">97</div><div class="line">98</div><div class="line">99</div><div class="line">100</div><div class="line">101</div><div class="line">102</div><div class="line">103</div><div class="line">104</div><div class="line">105</div><div class="line">106</div><div class="line">107</div><div class="line">108</div><div class="line">109</div><div class="line">110</div></pre></td><td class="code"><pre><div class="line">#version: &quot;3&quot;  #error endpoint_mode Additional property endpoint_mode is not allowed</div><div class="line">version: &quot;3.2&quot;</div><div class="line">services:</div><div class="line">  consulserver:</div><div class="line">    image: progrium/consul:latest</div><div class="line">    environment:</div><div class="line">      SERVICE_TAGS: consul servers</div><div class="line">    networks:</div><div class="line">      - overlay</div><div class="line">    #hostname: consulserver</div><div class="line">    ports:</div><div class="line">      - &quot;8300:8300&quot;</div><div class="line">      - &quot;8400:8400&quot;</div><div class="line">      - &quot;8500:8500&quot;</div><div class="line">      - &quot;53:53&quot;</div><div class="line">    command: -server -ui-dir /ui -data-dir /tmp/consul -bootstrap-expect 1</div><div class="line">    deploy:</div><div class="line">      placement:</div><div class="line">        constraints: [node.role == manager]</div><div class="line"></div><div class="line">  user_service:</div><div class="line">    image: windcatcher/user_service:v1</div><div class="line">    networks:</div><div class="line">      - overlay    </div><div class="line">    # ports:    #error port published with ingress mode can&apos;t be used with dnsrr mode</div><div class="line">    #   - 80:80</div><div class="line">    environment:</div><div class="line">      - ASPNETCORE_URLS=http://0.0.0.0:80</div><div class="line">      - ConsulUrl=http://consulserver:8500</div><div class="line">      - RegisterServerUrl=http://user_service</div><div class="line">      - RegisterServiceName=user_service</div><div class="line">    deploy:</div><div class="line">      mode: replicated</div><div class="line">      replicas: 3</div><div class="line">      endpoint_mode: dnsrr</div><div class="line"></div><div class="line">  product_service:</div><div class="line">    image: windcatcher/product_service:v1</div><div class="line">    #hostname: product_service</div><div class="line">    networks:</div><div class="line">      - overlay </div><div class="line">    environment:</div><div class="line">      - ASPNETCORE_URLS=http://0.0.0.0:80</div><div class="line">      - ConsulUrl=http://consulserver:8500</div><div class="line">      - RegisterServerUrl=http://product_service</div><div class="line">      - RegisterServiceName=product_service</div><div class="line">      - DiscoveryServiceName=user_service</div><div class="line">      - DiscoverDnsUrl=http://consulserver:8600</div><div class="line">       </div><div class="line">    # ports:</div><div class="line">    #   - &apos;8802:80&apos; </div><div class="line">      </div><div class="line">    depends_on:</div><div class="line">      - consulserver</div><div class="line">      - user_service</div><div class="line">    deploy:</div><div class="line">      mode: replicated</div><div class="line">      replicas: 3</div><div class="line">      endpoint_mode: dnsrr</div><div class="line"></div><div class="line">  identity_service:</div><div class="line">    image: windcatcher/identity_service:v1</div><div class="line">    #hostname: identity_service</div><div class="line">    networks:</div><div class="line">      - overlay     </div><div class="line">    ports:</div><div class="line">      - &apos;8010:80&apos; </div><div class="line">    deploy:</div><div class="line">      placement:</div><div class="line">        constraints: [node.role == manager]</div><div class="line">        </div><div class="line">  ocelotgateway:</div><div class="line">    image: windcatcher/ocelotgateway:v1</div><div class="line">    networks:</div><div class="line">      - overlay     </div><div class="line">    environment:</div><div class="line">      - IdentityServerUrl=http://identity_service</div><div class="line">    </div><div class="line">    ports:</div><div class="line">      - &apos;9900:80&apos;  </div><div class="line">    depends_on:</div><div class="line">      - consulserver</div><div class="line">      - user_service</div><div class="line">      - product_service</div><div class="line">      - identity_service</div><div class="line">    deploy:</div><div class="line">      placement:</div><div class="line">        constraints: [node.role == manager]</div><div class="line"></div><div class="line"></div><div class="line">  simpleclient:</div><div class="line">    image: windcatcher/simpleclient:v1</div><div class="line">    networks:</div><div class="line">      - overlay     </div><div class="line">    environment:</div><div class="line">      - IdentityServerUrl=http://identity_service</div><div class="line">      - GatewayUrl=http://ocelotgateway</div><div class="line">    ports:</div><div class="line">      - &apos;8821:80&apos;   </div><div class="line">    depends_on:</div><div class="line">      - ocelotgateway</div><div class="line">      - user_service</div><div class="line">      - product_service</div><div class="line">      - identity_service</div><div class="line">    deploy:</div><div class="line">      placement:</div><div class="line">        constraints: [node.role == manager]</div><div class="line"></div><div class="line">networks:</div><div class="line">  overlay:</div></pre></td></tr></table></figure>
+<h3 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h3><ul>
+<li><a href="https://yeasy.gitbooks.io/docker_practice/content/swarm_mode/create.html" target="_blank" rel="external">创建 Swarm 集群</a></li>
+<li><a href="https://docs.docker.com/compose/compose-file/#endpoint_mode" target="_blank" rel="external">https://docs.docker.com/compose/compose-file/#endpoint_mode</a></li>
+<li><p><a href="http://www.jessetalk.cn/2018/03/19/net-core-apigateway-ocelot-docs/" target="_blank" rel="external"> .NET Core开源API网关 – Ocelot中文文档</a></p>
 </li>
-<li><em>效果：</em>  <figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line"><span class="comment">//结算</span></div><div class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">deposit</span><span class="params">(<span class="keyword">double</span> money)</span> </span>&#123;  </div><div class="line">        <span class="keyword">double</span> newBalance=<span class="keyword">this</span>.balance+money;  </div><div class="line">        <span class="keyword">try</span> &#123;  </div><div class="line">            Thread.sleep(<span class="number">10</span>);  </div><div class="line">        &#125; <span class="keyword">catch</span> (InterruptedException e) &#123;  </div><div class="line">            <span class="comment">// <span class="doctag">TODO:</span> handle exception  </span></div><div class="line">        &#125;  </div><div class="line">        <span class="keyword">this</span>.balance=newBalance;  </div><div class="line">    &#125;</div></pre></td></tr></table></figure>
+<li><p><a href="http://michaco.net/blog/ServiceDiscoveryAndHealthChecksInAspNetCoreWithConsul" target="_blank" rel="external">http://michaco.net/blog/ServiceDiscoveryAndHealthChecksInAspNetCoreWithConsul</a></p>
 </li>
-</ul>
-<h5 id="分割线"><a href="#分割线" class="headerlink" title="分割线"></a>分割线</h5><ul>
-<li>分割线的语法只需要<strong>三个 * 号</strong></li>
-</ul>
-<h5 id="页内跳转"><a href="#页内跳转" class="headerlink" title="页内跳转"></a>页内跳转</h5><h6 id="自动生成目录"><a href="#自动生成目录" class="headerlink" title="自动生成目录:"></a>自动生成目录:</h6><ul>
-<li>参考 快捷键<a href="#content">生成目录</a></li>
-</ul>
-<h6 id="手动生成目录"><a href="#手动生成目录" class="headerlink" title="手动生成目录"></a>手动生成目录</h6><ul>
-<li>目录内容    <pre><code>\* \[1.语法示例\](#1)  
-&amp;emsp;\* \[1.1图片\](#1.1)    
-</code></pre></li>
-<li>正文  <pre><code>&amp;lt;h5 id=&quot;1&quot;&gt;1.语法示例&amp;lt;/h2&gt;  
- &amp;emsp;&amp;lt;h6 id=&quot;2&quot;&gt;1.图片示例&amp;lt;/h2&gt;  
-</code></pre></li>
-<li>例如  <blockquote>
-<p>目录         </p>
-<pre><code>[1.语法示例](#1)  
-&amp;emsp;[1.1图片](#1.1)  
-</code></pre><p> 正文     </p>
-<pre><code>&lt;h5 id=&quot;1&quot;&gt;1.语法示例&lt;/h2&gt; &lt;h6 id=&quot;1.1&quot;&gt;1.1图片&lt;/h2&gt;
-</code></pre></blockquote>
-</li>
-</ul>
-<h6 id="html标签实现"><a href="#html标签实现" class="headerlink" title="html标签实现"></a>html标签实现</h6><ul>
-<li>定义一个锚(id)：&lt;span id=”jump”>跳转到的地方&lt;/span></li>
-<li>使用markdown语法：[点击跳转](#jump)</li>
-<li><em>例如：</em><blockquote>
-<p><span id="jump">跳转到的地方</span><br>  <a href="#jump">点击跳转</a></p>
-</blockquote>
-</li>
-</ul>
-<hr>
-<h4 id="常用快捷键"><a href="#常用快捷键" class="headerlink" title="常用快捷键"></a>常用快捷键</h4><ul>
-<li>MarkdownPreview插件:<br><strong>快速预览</strong>：<strong>alt+m</strong>，<em>前提需要设置该快捷键，MarkdownPreview没有默认的快捷键</em><br><strong>生成网页</strong>：按<strong>CTRL + B</strong>生成网页HTML；<br><strong>生成目录</strong>：在文章最前面添加<strong>[TOC]</strong>自动 <span id="content">生成目录</span>  ；<br><strong>调出命令</strong>：<strong>Ctrl+Shift+P</strong>或是点击Preference-&gt;Package Control调出命令面板，输入<strong>mdp</strong></li>
-<li><p>OmniMarkupPreviwer插件：<br><strong>Ctrl+Alt+O</strong>: Preview Markup in Browser<br>Ctrl+Alt+X: Export Markup as HTML.<br>Ctrl+Alt+C: Copy Markup as HTML  </p>
-</li>
-<li><p>MarkdownEditing插件<br>插入链接：输入 “mdi + tab”<br>插入图片：输入 “mdl + tab”   </p>
-</li>
-</ul>
-<hr>
-<h4 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h4><ul>
-<li><a href="http://www.cnblogs.com/JohnTsai/p/4027229.html#jump" target="_blank" rel="external">MarkDown技巧：两种方式实现页内跳转</a></li>
-<li><a href="http://www.appinn.com/markdown/" target="_blank" rel="external">Markdown 语法说明 (简体中文版)</a></li>
-<li><a href="http://www.appinn.com/markdown/basic.html" target="_blank" rel="external">Markdown: Basics （快速入门）</a></li>
-<li><a href="http://www.jianshu.com/p/1e402922ee32/" target="_blank" rel="external">Markdown——入门指南</a></li>
-<li><a href="http://www.jianshu.com/p/f8ff7dace5d4" target="_blank" rel="external">怎么结合印象笔记来使用Sublime Text？</a></li>
-<li><a href="http://blog.csdn.net/qazxswed807/article/details/51235792#t3" target="_blank" rel="external">使用Sublime Text 3写Markdown</a></li>
-<li><a href="http://www.jianshu.com/p/aa30cc25c91b" target="_blank" rel="external">Sublime插件：Markdown篇</a></li>
-<li><a href="http://blog.csdn.net/github_35160620/article/details/52158604" target="_blank" rel="external">MarkdownPad 2 安装和破解</a></li>
-<li><a href="http://blog.csdn.net/geekleee/article/details/73018194#inline" target="_blank" rel="external">markdown语法之如何插入图片</a></li>
 </ul>
 
       
@@ -562,7 +536,15 @@
       
         <div class="post-tags">
           
-            <a href="/tags/Hexo/" rel="tag"># Hexo</a>
+            <a href="/tags/docker/" rel="tag"># docker</a>
+          
+            <a href="/tags/dockerswarm/" rel="tag"># dockerswarm</a>
+          
+            <a href="/tags/consul/" rel="tag"># consul</a>
+          
+            <a href="/tags/asp-net-core/" rel="tag"># asp.net core</a>
+          
+            <a href="/tags/ocelot/" rel="tag"># ocelot</a>
           
         </div>
       
@@ -575,14 +557,18 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
+              <a href="/2017/09/16/how-to-use-hexo/" rel="next" title="hexo使用">
+                <i class="fa fa-chevron-left"></i> hexo使用
+              </a>
+            
           </div>
 
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2017/09/16/how-to-use-hexo/" rel="prev" title="hexo使用">
-                hexo使用 <i class="fa fa-chevron-right"></i>
+              <a href="/2017/09/18/how-to-use-mybatis/" rel="prev" title="mybatis使用（配置、数据读取，对象化，分页）">
+                mybatis使用（配置、数据读取，对象化，分页） <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -649,6 +635,12 @@
 
 
           
+  <div class="comments" id="comments">
+    
+      <div id="hypercomments_widget"></div>
+    
+  </div>
+
 
         </div>
         
@@ -775,7 +767,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#markdown-使用"><span class="nav-number">1.</span> <span class="nav-text">markdown 使用</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#常用语法"><span class="nav-number">1.0.1.</span> <span class="nav-text">常用语法</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#换行与缩进"><span class="nav-number">1.0.1.1.</span> <span class="nav-text">换行与缩进</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#标题"><span class="nav-number">1.0.1.2.</span> <span class="nav-text">标题</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#列表"><span class="nav-number">1.0.1.3.</span> <span class="nav-text">列表</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#引用"><span class="nav-number">1.0.1.4.</span> <span class="nav-text">引用</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#粗体和斜体和字体颜色"><span class="nav-number">1.0.1.5.</span> <span class="nav-text">粗体和斜体和字体颜色</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#图片与链接"><span class="nav-number">1.0.1.6.</span> <span class="nav-text">图片与链接</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#代码框"><span class="nav-number">1.0.1.7.</span> <span class="nav-text">代码框</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#分割线"><span class="nav-number">1.0.1.8.</span> <span class="nav-text">分割线</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#页内跳转"><span class="nav-number">1.0.1.9.</span> <span class="nav-text">页内跳转</span></a><ol class="nav-child"><li class="nav-item nav-level-6"><a class="nav-link" href="#自动生成目录"><span class="nav-number">1.0.1.9.1.</span> <span class="nav-text">自动生成目录:</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#手动生成目录"><span class="nav-number">1.0.1.9.2.</span> <span class="nav-text">手动生成目录</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#html标签实现"><span class="nav-number">1.0.1.9.3.</span> <span class="nav-text">html标签实现</span></a></li></ol></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#常用快捷键"><span class="nav-number">1.0.2.</span> <span class="nav-text">常用快捷键</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#参考"><span class="nav-number">1.0.3.</span> <span class="nav-text">参考</span></a></li></ol></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#使用dockerswarm-consul-ocelot对asp-netcore服务进行集群-发现和网关认证"><span class="nav-number">1.</span> <span class="nav-text">使用dockerswarm+consul+ocelot对asp netcore服务进行集群,发现和网关认证</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#环境"><span class="nav-number">1.1.</span> <span class="nav-text">环境</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#简述"><span class="nav-number">1.2.</span> <span class="nav-text">简述</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#代码"><span class="nav-number">1.3.</span> <span class="nav-text">代码</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#步骤"><span class="nav-number">1.4.</span> <span class="nav-text">步骤</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#进入manager管理节点，创建并编辑dockerSwarm-yml"><span class="nav-number">1.4.1.</span> <span class="nav-text">进入manager管理节点，创建并编辑dockerSwarm.yml</span></a><ol class="nav-child"><li class="nav-item nav-level-6"><a class="nav-link" href="#进入manager管理节点"><span class="nav-number">1.4.1.0.1.</span> <span class="nav-text">进入manager管理节点</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#创建并编辑dockerSwarm-yml"><span class="nav-number">1.4.1.0.2.</span> <span class="nav-text">创建并编辑dockerSwarm.yml</span></a></li></ol></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#使用docker-stack命令发布服务"><span class="nav-number">1.4.2.</span> <span class="nav-text">使用docker stack命令发布服务</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#查看consul的UI中的服务"><span class="nav-number">1.4.3.</span> <span class="nav-text">查看consul的UI中的服务</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#使用客户端访问经过ocelot网关认证（密码模式）的product服务信息"><span class="nav-number">1.4.4.</span> <span class="nav-text">使用客户端访问经过ocelot网关认证（密码模式）的product服务信息</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#使用客户端访问的经过ocelot认证（密码模式）的Product服务中user信息"><span class="nav-number">1.4.5.</span> <span class="nav-text">使用客户端访问的经过ocelot认证（密码模式）的Product服务中user信息</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#dockerSwarm-yml-文件"><span class="nav-number">1.5.</span> <span class="nav-text">dockerSwarm.yml 文件</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#参考"><span class="nav-number">1.6.</span> <span class="nav-text">参考</span></a></li></ol></li></ol></div>
             
 
           </div>
@@ -948,6 +940,8 @@
 
 		_hcwp.push({widget:"Bloggerstream", widget_id: 95633, selector:".hc-comment-count", label: "{\%COUNT%\}" });
 
+		
+		_hcwp.push({widget:"Stream", widget_id: 95633, xid: "2017/09/16/dockerswarm-consul-ocelot-for-aspnetcore-discovery/"});
 		
 
 		(function() {

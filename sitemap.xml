@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://windcatcher.github.io/2018/04/13/%E4%BD%BF%E7%94%A8powshell%E7%AE%A1%E7%90%86docker%20%E5%88%9B%E5%BB%BA%E4%B8%8E%E5%8F%91%E5%B8%83/</loc>
+    
+    <lastmod>2018-04-13T19:38:34.418Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://windcatcher.github.io/2018/04/13/dockerswarm-consul-ocelot-for-aspnetcore-discovery/</loc>
     
     <lastmod>2018-04-13T19:28:57.643Z</lastmod>
